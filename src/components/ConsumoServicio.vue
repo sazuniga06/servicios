@@ -22,16 +22,26 @@ onMounted(async() => {
 
 <style scoped>
 .list-group {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
+  width: 400px;
+  margin: 20px auto;
+  
+}
+.list-group li {
+  background: #f4f4f4;
+  margin: 5px 0;
+  padding: 10px;
+  border: #ccc 1px solid;
+  border-radius: 4px;
+}
+.list-group li:nth-child(odd) {
+  background: #e9e9e9;
+}
+.list-group li:hover {
+  background: #d3d3d3;
+  cursor: pointer;
 }
 
-.list-group-item {
-  padding: 12px 16px;
-  border-bottom: 1px solid #eee;
-}
 
-.list-group-item:hover {
-  background-color: #f5f5f5;
-}
 </style>
